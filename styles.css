@@ -1,0 +1,70 @@
+/* General Reset */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: black;
+  color: white;
+}
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: rgb(146, 1, 1);
+}
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+}
+.boton {
+  background-color: #ffc107;
+  color: black;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+.hero {
+  text-align: left;
+  padding: 100px;
+  padding-top: 150px;
+}
+.hero img {
+  width: 100%;
+}
+.hero-text {
+  font-size: 3em;
+  font-weight: bold;
+}
+
+.Main1 {
+  display: flex;
+  padding-top: 30px;
+}
+
+.ImagenMain{
+  width: 1100px;
+  height: 700px;
+}
+
+.Header{
+  display: flex;
+  gap: 600px;
+  background-color: rgb(146, 1, 1);
+  
+}
+.logo{
+  display: flex;
+  width: 80px;
+  margin-left: 60px;
+  justify-content: left;
+}
+
+.ImagenesR{
+  margin-left: 600px;
+  display: flex;
+  width: 20px;
+  gap: 20px;
+  height: 30px;
+
+}
