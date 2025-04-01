@@ -2,7 +2,7 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-color: black;
+  background-color: rgb(0, 0, 0);
   color: white;
 }
 .navbar {
@@ -10,7 +10,7 @@ body {
   justify-content: center;
   align-items: center;
   padding: 15px 30px;
-  background-color: rgb(146, 1, 1);
+  background-color: rgb(14, 14, 14);
 }
 .navbar a {
   color: white;
@@ -18,53 +18,205 @@ body {
   margin: 0 15px;
 }
 .boton {
-  background-color: #ffc107;
-  color: black;
-  padding: 10px 15px;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  padding: 30px 60px;
   text-decoration: none;
+  font-weight: bolder;
+  align-self: start;
   border-radius: 5px;
+  border: 1px solid white;
+  font-size: 30px;
 }
+
+.boton:hover {
+  background-color: rgb(236, 80, 2);
+  color: black;
+}
+
 .hero {
   text-align: left;
   padding: 100px;
-  padding-top: 150px;
+  padding-top: 80px;
 }
 .hero img {
   width: 100%;
 }
 .hero-text {
-  font-size: 3em;
+  font-size: 70px;
   font-weight: bold;
 }
 
 .Main1 {
   display: flex;
-  padding-top: 30px;
 }
 
-.ImagenMain{
+.ImagenMain {
   width: 1100px;
   height: 700px;
+  border-right: 1px white solid;
+  border-left: 0cap;
+  border-bottom: 1px white solid;
+  width: 100%;
+
 }
 
-.Header{
+.Header {
   display: flex;
   gap: 600px;
-  background-color: rgb(146, 1, 1);
-  
+  background-color: rgb(14, 14, 14);
+  border-bottom: 1px white solid;
 }
-.logo{
+.logo {
   display: flex;
   width: 80px;
   margin-left: 60px;
   justify-content: left;
 }
 
-.ImagenesR{
+.ImagenesR {
   margin-left: 600px;
   display: flex;
   width: 20px;
   gap: 20px;
   height: 30px;
+}
 
+.TRAILER {
+  font-size: 40px;
+}
+
+.BotonesH {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 130px;
+  gap: 3px;
+}
+footer {
+  position: relative;
+  text-align: center;
+  background-image: url(imagenes/fondo.jpg);
+  background-size: contain;
+  background-position: center;
+  border-top: 0.5px solid white;
+  z-index: 0;
+}
+
+footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7); /* Ajusta la opacidad del fondo */
+  z-index: -1;
+}
+
+.Foot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 200px 20px;
+  z-index: 1; /* Asegura que el contenido esté por encima del fondo */
+  position: relative;
+}
+.logo2 {
+  width: 100px;
+}
+.buttonF {
+  background-color: transparent;
+  color: white;
+  padding: 15px 35px;
+  text-decoration: none;
+  font-weight: bolder;
+  border-radius: 5px;
+  border: 1px solid white;
+  font-size: 20px;
+}
+
+.buttonF:hover {
+  background-color: rgb(69, 69, 69);
+}
+
+p{
+  max-width: 30%;
+  font-weight: bolder;
+}
+
+.RedesSociales{
+
+  display: flex;
+  justify-content: end;
+  padding-top: 60px;
+  gap: 25px;
+}
+
+.RedesSociales img{
+   width: 55px;
+}
+
+.RedesSociales img:hover{
+
+  transform: scale(1.2);
+  transition-duration: 0.3s;
+
+}
+
+.mainFotos{
+
+  display: flex;
+  gap: 65px;
+  justify-content: center;
+
+}
+
+.mainFotos img{
+
+  width: 300px;
+}
+
+.Plata{
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+
+}
+.Plata img{
+
+  width: 20px;
+  
+}
+
+
+.Sboton{
+  background-color: transparent;
+  color: white;
+  padding: 15px 35px;
+  text-decoration: none;
+  font-weight: bolder;
+  border-radius: 5px;
+  border: 1px solid white;
+  font-size: 20px;
+}
+
+.SbotonS{
+
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+  padding-top: 30px;
+}
+
+.Sboton:hover{
+  background-color:rgb(236, 80, 2) ;
+  color: black;
+}
+
+.Smain h1{
+
+  text-align: center;
+  font-size: 50px;
 }
