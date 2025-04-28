@@ -28,13 +28,15 @@ header {
   color: white;
   text-decoration: none;
   margin: 0 1px;
-  transition: all 0.3s ease; 
+  transition: all 0.3s ease;
 }
 
 a:hover {
-  color: rgb(236, 80, 2); 
-  transform: scale(1.2); 
+  color: rgb(236, 80, 2);
+  transform: scale(1.2);
 }
+
+
 ul li {
   list-style: none;
   margin: 0 auto;
@@ -43,7 +45,13 @@ ul li {
   position: relative;
   text-decoration: none;
   text-align: center;
+  cursor: pointer;
 }
+
+.menu > li:hover .dropdown {
+
+}
+
 
 li a {
   color: black;
@@ -56,18 +64,17 @@ ul li ul {
   padding-left: 0;
   color: white;
   left: 0;
-  display: none;
   background: rgb(14, 14, 14);
   border-radius: 5px;
   padding: 5px;
   margin-top: 20px;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  z-index: 10;
 }
 
-ul li:hover > ul,
-ul li ul:hover {
+ul li:hover > ul {
   visibility: visible;
   opacity: 1;
-  display: block;
   min-width: 250px;
   text-align: left;
   padding-top: 20px;
@@ -101,12 +108,12 @@ ul li ul li a {
   height: 80px;
   aspect-ratio: 16/9;
   object-fit: contain;
-  transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out; 
+  transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
 }
 
 .logo:hover {
-  transform: scale(1.01); 
-  filter: brightness(2); 
+  transform: scale(1.01);
+  filter: brightness(2);
 }
 .ImagenesR {
   display: flex;
@@ -114,8 +121,6 @@ ul li ul li a {
   gap: 30px;
   height: 30px;
 }
-
-
 
 /*PRIMER SECTION---------------------------------------------------------------------------------------------------*/
 .boton {
@@ -173,11 +178,6 @@ ul li ul li a {
   gap: 3px;
 }
 
-p {
-  max-width: 30%;
-  font-weight: bolder;
-}
-
 /*SEGUNDO SECTION---------------------------------------------------------------------------------------------------*/
 .mainFotos {
   display: flex;
@@ -233,7 +233,8 @@ p {
 }
 
 .Cartas {
-  border-radius: 3px;}
+  border-radius: 3px;
+}
 
 .Cartas {
   transition: transform 0.3s ease;
@@ -242,7 +243,6 @@ p {
 .Cartas:hover {
   transform: scale(1.05);
 }
-
 
 /*Footer*/
 
@@ -437,6 +437,9 @@ button {
   cursor: pointer;
 }
 
+.modal-content h2 {
+  color: black;
+}
 /*FORMULARIO*/
 .container {
   width: 30%;
@@ -450,19 +453,25 @@ button {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+.enviar-boton {
+  font-weight: bolder;
+}
+
 h2 {
   text-align: center;
-  color: white
+  color: white;
 }
 
 label {
   display: block;
   margin-bottom: 8px;
   font-size: 16px;
-  color: white
+  color: white;
+  font-weight: bolder;
 }
 
-input, textarea {
+input,
+textarea {
   width: 100%;
   padding: 10px;
   margin-bottom: 20px;
@@ -491,64 +500,62 @@ input[type="submit"]:hover {
 }
 
 textarea {
-  resize: vertical; 
-  min-height: 100px; 
+  resize: vertical;
+  min-height: 100px;
 }
 
 /*ABOUT US*/
 .section-about {
   display: flex;
   justify-content: left;
-  align-items: center;
-  padding: 0px 0;
   background-color: rgb(0, 0, 0);
   width: 100%;
+  padding-bottom: 50px;
 }
 
 .section-about img {
-  width: 850px;
+  width: 800px;
   height: 700px;
-  border: white solid 1px;
-  border-top: none;
 }
 
 .explicacion-empresa {
-  width: 3000px;
-  height: 700px;
-  display: block;
   line-height: 1.4;
 }
 
 .section-about-text {
   padding: 10px 50px;
-  width: 100%;  
+  width: 100%;
+  padding-bottom: 0px;
 }
 
 .section-about-text h1 {
   font-size: 50px;
   font-weight: bolder;
   border-bottom: white solid 1px;
+  width: 50%;
+}
+
+.section-about-text p {
+  line-height: 1.8;
+  font-size: large;
 }
 
 .section-ceos {
   justify-content: center;
   align-items: center;
   gap: 50px;
-}
-
-.titulo-ceos {
-  font-size: 50px;
-  font-weight: bolder;
-  border-bottom: white solid 1px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding-top: 0px;
+  background-color: rgb(14, 14, 14);
+  padding-top: 20px;
+  border-top: 1px solid white;
 }
 
 .apartado-didac {
   display: flex;
-  align-items: center;
   gap: 50px;
+  font-size: large;
+  padding-right: 70px;
+  padding-top: 45px;
 }
 
 .texto-didac h1 {
@@ -556,14 +563,19 @@ textarea {
   font-weight: bolder;
   border-bottom: white solid 1px;
   direction: rtl;
+  width: 35%;
+  justify-self: end;
 }
 
 .texto-didac p {
   line-height: 1.4;
   direction: rtl;
+  width: 60%;
+  justify-self: end;
+  line-height: 35px;
 }
 
-.imagen-didac img{
+.imagen-didac img {
   border-radius: 1%;
   width: 400px;
   justify-content: right;
@@ -571,21 +583,25 @@ textarea {
 
 .apartado-victor {
   display: flex;
-  align-items: center;
   gap: 50px;
   padding-top: 80px;
+  padding-left: 70px;
+  padding-bottom: 30px;
+  font-size: large;
 }
 
 .texto-victor h1 {
   font-size: 40px;
   font-weight: bolder;
   border-bottom: white solid 1px;
+  width: 35%;
 }
 
 .texto-victor p {
   line-height: 1.4;
   display: block;
-  width: 100%;
+  width: 60%;
+  line-height: 35px;
 }
 
 .imagen-victor img {
@@ -593,5 +609,3 @@ textarea {
   width: 400px;
   justify-content: left;
 }
-
-
