@@ -609,3 +609,14 @@ textarea {
   width: 400px;
   justify-content: left;
 }
+
+.categ{
+
+  display: flex;
+  justify-content: center;
+  font-size: 80px;
+  gap: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: black;
+}
