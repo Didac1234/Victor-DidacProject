@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <header class="Header">
+        <!-- primer hijo -->
+        <a href="/Main Pagina/index.html">
+          <img class="logo" src="/Main-Pagina/imagenes/NG.png" alt="LOGO" />
+        </a>
+        <!-- segundo hijo -->
+        <nav role="navigation" class="navbar">
+          <ul class="menu">
+            <li>
+              <a href="/Main Pagina/index.html" class="principales">Inicio</a>
+            </li>
+            <li>
+              <a href="/juegos-pagina/index.html" class="principales">Juegos</a>
+              <ul class="dropdown">
+                  <li><a href="/Categorias/Acción/index.html">Accion</a></li>
+                  <li><a href="/Categorias/Shooter/index.html">Shooter</a></li>
+                  <li><a href="/Categorias/Supervivencia/index.html">Supervivencia</a></li>
+                  <li><a href="/Categorias/Indie/index.html">Indie</a></li>
+                  <li><a href="/Categorias/Arcade/index.html">Arcade</a></li>
+                  <li><a href="/Categorias/Estrategia/index.html">Estrategia</a></li>
+                  <li><a href="/Categorias/Terror/index.html">Terror/Horror</a></li>
+                  <li><a href="/Categorias/Deportes/index.html">Deportes</a></li>
+                  <li><a href="/Categorias/Lucha/index.html">Lucha</a></li>
+                </ul>
+            </li>
+            <li>
+              <a href="#" class="principales">Company</a>
+              <ul class="dropdown">
+                <li><a href="/About-Us/index.html">About Us</a></li>
+                <li><a href="/Contact/index.html">Contact</a></li>
+              </ul>
+            </li>
+  
+            <li><a href="/Our-Games/index.html" class="principales">Our Games</a></li>
+            <li><a href="#" class="principales">Descargas</a></li>
+          </ul>
+        </nav>
+  
+        <!-- tercer hijo -->
+        <div class="ImagenesR">
+          <img
+            src="https://images.vexels.com/media/users/3/140723/isolated/preview/158241d2079a635fb0cae49accb56da5-icono-de-lupa.png"
+            alt=""
+          />
+  
+          <img
+            src="/Main-Pagina/imagenes/image.png"
+            alt=""
+            height="30px"
+            onclick="abrirModal()"
+          />
+        </div>
+      </header>
+
+      <section class="section-compra">
+        <div class="img-compra">
+            <img src="/Categorias/Lucha/imagenes/streetfighter6.png" alt="">
+        </div>
+
+        <div class="info-compra">
+            <h1>Street</h1>
+            <p class="añocreador">2018 - works</p>
+            <p class="precio">9,99$</p>
+            <button id="openModal">¡Compra ahora!</button>
+        </div>
+      </section>
+
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Formulario de Pago</h2>
+            <form>
+              <!-- Campo para el número de tarjeta -->
+              <label for="numeroTarjeta">Número de tarjeta:</label><br>
+              <input type="text" id="numeroTarjeta" name="numeroTarjeta" placeholder="XXXX XXXX XXXX XXXX" required><br><br>
+      
+              <!-- Campo para la fecha de caducidad -->
+              <label for="fechaCaducidad">Fecha de caducidad:</label><br>
+              <input type="month" id="fechaCaducidad" name="fechaCaducidad" required><br><br>
+      
+              <!-- Campo para el CVV -->
+              <label for="cvv">CVV:</label><br>
+              <input type="number" id="cvv" name="cvv" placeholder="XXX" required><br><br>
+      
+              <!-- Campo para el nombre del titular -->
+              <label for="nombreTitular">Nombre del titular:</label><br>
+              <input type="text" id="nombreTitular" name="nombreTitular" placeholder="Nombre Apellido" required><br><br>
+      
+              <!-- Botón para enviar -->
+              <input type="submit" value="Pagar">
+            </form>
+          </div>
+      </div>
+
+      <footer>
+        <div class="Foot">
+          <img class="logo2" src="/Main-Pagina/imagenes/NG.png" alt="logo" />
+          <p>
+            La suscripción te permite acceder a una biblioteca de juegos sin
+            comprar cada uno por separado, ahorrando dinero y explorando más
+            títulos. <br />
+            Además, ofrece beneficios exclusivos como acceso anticipado, contenido
+            adicional, descuentos y juego en la nube.
+          </p>
+          <button class="buttonF">¡Suscríbete ya!</button>
+  
+          <section class="RedesSociales">
+            <div>
+              <a href="https://www.instagram.com/xdidacx4/" target="_blank">
+                <img src="/Main-Pagina/imagenes/instagram (2).png" alt="insta" />
+              </a>
+            </div>
+            <div>
+              <img src="/Main-Pagina/imagenes/facebook (2).png" alt="face" />
+            </div>
+            <div>
+              <img src="/Main-Pagina/imagenes/twitter (2).png" alt="twite" />
+            </div>
+            <div>
+              <img src="/Main-Pagina/imagenes/youtube (2).png" alt="youtube" />
+            </div>
+            <div>
+              <img src="/Main-Pagina/imagenes/tiktok (2).png" alt="Tik tok" />
+            </div>
+          </section>
+        </div>
+  
+        <div class="Contactanos">
+          <a
+            class="Contactanos"
+            href="mailto:asans@fpllefia.com?Subject=Aquí%20el%20asunto%20del%20mail"
+            >Contactar por email</a
+          >
+          <a class="Contactanos" href="https://wa.me/722746567" target="_blank"
+            >Escríbeme por WhatsApp</a
+          >
+        </div>
+  
+        <div class="Derechos">
+          <p>© 2023 Núvol Games. Todos los derechos reservados. Política de privacidad | Términos de servicio. Desarrollado por Núvol Games</p>
+        </div>
+      </footer>  
+
+      <script>
+        const modal = document.getElementById("myModal");
+        const btn = document.getElementById("openModal");
+        const span = document.getElementsByClassName("close")[0];
+    
+        // Abrir el modal cuando se hace clic en el botón
+        btn.onclick = function() {
+          modal.style.display = "block";
+        }
+    
+        // Cerrar el modal cuando se hace clic en la "X"
+        span.onclick = function() {
+          modal.style.display = "none";
+        }
+    
+        // Cerrar el modal cuando se hace clic fuera del contenido
+        window.onclick = function(event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        }
+      </script>
+</body>
+</html>
