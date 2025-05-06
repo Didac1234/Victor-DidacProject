@@ -814,3 +814,9 @@ textarea {
   color: black;
   transform: scale(1.0);
 }
+
+.img-about{
+border-right: white solid 1px;
+border-left: 0cap;
+border-bottom: white solid 1px;
+}
