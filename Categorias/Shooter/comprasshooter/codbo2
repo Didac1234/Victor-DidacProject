@@ -63,13 +63,13 @@
 
       <section class="section-compra">
         <div class="img-compra">
-            <img src="/Categorias/Shooter/imagenes/codbo3.jpg" alt="">
+            <img src="/Categorias/Shooter/imagenes/codbo2.jpg" alt="">
         </div>
 
         <div class="info-compra">
-            <h1>Call of Duty: Black Ops III</h1>
-            <p class="añocreador">2015 - Treyarch</p>
-            <p class="precio">29,99$</p>
+            <h1>Call of Duty: Black Ops II</h1>
+            <p class="añocreador">2012 - Treyarch</p>
+            <p class="precio">24,99$</p>
             <button id="openModal">¡Compra ahora!</button>
         </div>
       </section>
