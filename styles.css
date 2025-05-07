@@ -214,7 +214,7 @@ ul li ul li a {
   justify-content: center;
   padding-bottom: 20px;
   padding-top: 30px;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  
 }
 
 .Sboton {
@@ -224,6 +224,13 @@ ul li ul li a {
 .Sboton:hover {
   background-color: rgb(236, 80, 2);
   color: black;
+  transform: scale(0.834);
+}
+
+.Smain {
+  background-color: rgb(14, 14, 14);
+  padding-top: 10px;
+  background: transparent;
 }
 
 .Smain h1 {
@@ -437,7 +444,12 @@ button {
 .HeaderS img {
   max-width: fit-content;
   height: 540px;
-  border: 0.5px solid white;
+  transition: 0.3s ease;
+}
+
+.HeaderS img:hover {
+  transform: scale(1.03);
+  transition-duration: 0.3s;
 }
 
 form {
@@ -604,6 +616,12 @@ textarea {
   border-radius: 1%;
   width: 400px;
   justify-content: right;
+  transition: 0.3s ease;
+}
+
+.imagen-didac img:hover {
+  transform: scale(1.03);
+  transition-duration: 0.5s;
 }
 
 .apartado-victor {
@@ -633,6 +651,12 @@ textarea {
   border-radius: 1%;
   width: 400px;
   justify-content: left;
+  transition: 0.3s ease;
+}
+
+.imagen-victor img:hover {
+  transform: scale(1.03);
+  transition-duration: 0.5s;
 }
 
 .categ {
@@ -701,6 +725,7 @@ textarea {
 .boton-ourgames:hover {
   background-color: rgb(236, 80, 2);
   color: black;
+  transform: scale(0.835);
 }
 
 /*Ver mas Pagina*/
@@ -774,6 +799,12 @@ textarea {
   border: 1px white solid;
   border-style: solid;
   border-radius: 1%;
+  transition: 0.3s ease;
+}
+
+.img-compra img:hover {
+  transform: scale(1.03);
+  transition-duration: 0.5s;
 }
 
 .info-compra {
